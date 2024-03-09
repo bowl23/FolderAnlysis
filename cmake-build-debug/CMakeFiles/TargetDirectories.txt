@@ -1,0 +1,3 @@
+D:/learn/hust/program_design/FolderAnlysis/cmake-build-debug/CMakeFiles/FolderAnlysis.dir
+D:/learn/hust/program_design/FolderAnlysis/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/learn/hust/program_design/FolderAnlysis/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -44,8 +44,8 @@ int main() {
         switch (select) {
             case 1: {
                 myTree.root->data->showFolderInfo();
-                system("pause");
-                system("cls");
+                system("pause");//暂停展示结果
+                system("cls");//清空屏幕
                 break;
             }
             case 2: {
@@ -92,5 +92,4 @@ int main() {
                 break;
         }
     }
-    return 0;
 }

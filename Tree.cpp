@@ -23,10 +23,16 @@ TreeNode::TreeNode(Folder *data) {
     this->data = data;
 }
 
+/*
+ * 添加孩子节点
+ */
 void TreeNode::addSon(TreeNode *sonNode) {
     this->son = sonNode;
 }
 
+/*
+ * 添加兄弟节点
+ */
 void TreeNode::addBro(TreeNode *broNode) {
     this->bro = broNode;
 }
@@ -220,6 +226,7 @@ void Tree::createSqlFile() {
 }
 
 TreeNode *Tree::findFile(filesystem::path path) {
+    //采用广度优先遍历算法，遍历树，找出目标节点并返回
     queue<TreeNode *> nodeQueue;
     nodeQueue.push(this->root);
     while (!nodeQueue.empty()) {

@@ -12,6 +12,7 @@ void Folder::getFolderValue() {
     time_t latestTime = MIN_TIME_T;
     filesystem::path earliestFile(this->folderPath);
     filesystem::path latestFile(this->folderPath);
+    //遍历一遍该文件夹查找出该文件夹中的最早和最晚时间，统计出该文件夹的大小
     for (auto i = filesystem::directory_iterator(this->folderPath); i != filesystem::directory_iterator(); i++) {
         struct stat st;
         stat(i->path().string().c_str(), &st);
